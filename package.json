@@ -1,0 +1,27 @@
+{
+  "name": "tmui-snippets",
+  "displayName": "tmui-snippets",
+  "description": "tmui3.x snippets",
+  "publisher": "laobei",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laobei/tmui-snippets"
+  },
+  "homepage": "https://github.com/laobei/tmui-snippets",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "tmui_snippets",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

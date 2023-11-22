@@ -1,0 +1,2121 @@
+{
+  "tm-app": {
+    "prefix": "tmapp",
+    "body": [
+      "<template>",
+      "    <tm-app ref=\"app\">",
+      "        <!-- 这里是你的页面代码。 -->",
+      "    </tm-app>",
+      "</template>",
+      "",
+      "<script lang=\"ts\" setup>",
+      "import { ref, getCurrentInstance, computed, inject } from 'vue'",
+      "import { onShow, onLoad, onInit } from '@dcloudio/uni-app'",
+      "import tmApp from \"@/tmui/components/tm-app/tm-app.vue\"",
+      "onLoad(() => {",
+      "  ",
+      "})",
+      "</script>"
+    ],
+    "description": "tm-app"
+  },
+  "大按钮": {
+    "prefix": "tm-button:large",
+    "body": [
+      "<tm-button color=\"pink\" :margin=\"[10]\" :shadow=\"0\" size=\"large\" label=\"按钮\"> </tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "普通按钮": {
+    "prefix": "tm-button:normal",
+    "body": [
+      "<tm-button :margin=\"[10]\" :shadow=\"0\" size=\"normal\" label=\"按钮\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "小按钮": {
+    "prefix": "tm-button:small",
+    "body": [
+      "<tm-button :margin=\"[10]\" size=\"small\" :shadow=\"0\" label=\"按钮\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "微型按钮": {
+    "prefix": "tm-button:mini",
+    "body": [
+      "<tm-button :margin=\"[10]\" size=\"mini\" :shadow=\"0\" label=\"按钮\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "浅边框按钮": {
+    "prefix": "tm-button:outline",
+    "body": [
+      "<tm-button :margin=\"[10]\" :shadow=\"0\" text size=\"normal\" outlined label=\"浅边框\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "深边框按钮": {
+    "prefix": "tm-button:outline:border",
+    "body": [
+      "<tm-button :margin=\"[10]\" :shadow=\"0\" :border=\"6\" outlined size=\"normal\" label=\"深边框\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "透明背景按钮": {
+    "prefix": "tm-button:transprent",
+    "body": [
+      "<tm-button :margin=\"[10]\" transprent text :shadow=\"0\" size=\"normal\" label=\"透明背景\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "全屏按钮": {
+    "prefix": "tm-button:block",
+    "body": [
+      "<tm-button block label=\"block\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "图标按钮": {
+    "prefix": "tm-button:icon",
+    "body": [
+      "<tm-button icon=\"tmicon-tongzhifill\" size=\"normal\" label=\"按钮\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "禁用按钮": {
+    "prefix": "tm-button:disabled",
+    "body": [
+      "<tm-button :margin=\"[0]\" disabled icon=\"tmicon-tongzhifill\" size=\"normal\" label=\"禁用\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "加载中按钮": {
+    "prefix": "tm-button:loading",
+    "body": [
+      "<tm-button :margin=\"[24, 0]\" loading icon=\"tmicon-tongzhifill\" size=\"normal\" label=\"加载中\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "按钮": {
+    "prefix": "tm-button",
+    "body": [
+      "<tm-button :margin=\"[0, 24]\" icon=\"tmicon-tongzhifill\" size=\"normal\" label=\"正常\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "浅色按钮": {
+    "prefix": "tm-button:linear:block",
+    "body": [
+      "<tm-button linear=\"right\" block label=\"light\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "深色按钮": {
+    "prefix": "tm-button:linear:dark",
+    "body": [
+      "<tm-button linear=\"right\" linearDeep=\"dark\" block label=\"dark\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "渐变色按钮": {
+    "prefix": "tm-button:linear:accent",
+    "body": [
+      "<tm-button linear=\"right\" linearDeep=\"accent\" block label=\"accent\"></tm-button>"
+    ],
+    "description": "tm-button"
+  },
+  "自定义渐变背景": {
+    "prefix": "tm-button:linear",
+    "body": [
+      "<tm-button :linear-color=\"['#ea3c2d', '#ff9d14']\" color=\"orange\" font-color=\"white\" linear=\"left\" block label=\"自定义渐变背景\" ></tm-button>"
+    ],
+    "description": "自定义渐变背景"
+  },
+
+  "图标": {
+    "prefix": "tm-icon",
+    "body": [
+      "<tm-icon name=\"myicon-music-e617\"></tm-icon>"
+    ],
+    "description": "tm-icon"
+  },
+  "间隔线": {
+    "prefix": "tm-divider",
+    "body": [
+      "<tm-divider></tm-divider>"
+    ],
+    "description": "间隔线"
+  },
+  "text文本": {
+    "prefix": "tm-text",
+    "body": [
+      "<tm-text label=\"这是文本标签，文本显示必需要使用此标签\"></tm-text>"
+    ],
+    "description": "tm-text"
+  },
+  "颜色文本": {
+    "prefix": "tm-text",
+    "body": [
+      "<tm-text color=\"red\" label=\"颜色，这是文本标签，文本显示必需要使用此标签\"></tm-text>"
+    ],
+    "description": "tm-text"
+  },
+  "tm-text": {
+    "prefix": "tm-text",
+    "body": [
+      "<tm-text color=\"grey\" :font-size=\"24\" label=\"文字大小，这是文本标签，文本显示必需要使用此标签\"></tm-text>"
+    ],
+    "description": "tm-text"
+  },
+  "text一行省略文本": {
+    "prefix": "tm-text",
+    "body": [
+      "<tm-text _class=\"text-overflow-1\" label=\"1行带省略，这是文本标签，文本显示必需要使用此标签，文本显示必需要使用此标\"></tm-text>"
+    ],
+    "description": "tm-text"
+  },
+  "text两行省略文本": {
+    "prefix": "tm-text",
+    "body": [
+      "<tm-text _class=\"text-overflow-2\" label=\"2行带省略，这是文本标签，文本显示必需要使用此标签，文本显示必需要使用此标示必需要使用此标签，文本显示必需要使用此标\"></tm-text>"
+    ],
+    "description": "tm-text"
+  },
+  "text长按复制文本": {
+    "prefix": "tm-text",
+    "body": [
+      "<tm-text selectable label=\"长按文本可以复制\"></tm-text>"
+    ],
+    "description": "tm-text"
+  },
+  "sheet容器": {
+    "prefix": "tm-sheet",
+    "body": [
+      "<tm-sheet :margin=\"[32]\" :round=\"3\" :shadow=\"2\"></tm-sheet>"
+    ],
+    "description": "tm-sheet"
+  },
+  "头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar img=\"https://picsum.photos/200/300\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "icon头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar :font-size=\"42\" :margin=\"[10, 0]\" icon=\"tmicon-QQ\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "圆形icon头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar :font-size=\"42\" :round=\"12\" color=\"pink\" linear=\"top\" icon=\"tmicon-QQ\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "文本状态头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar trigger triggerIcon=\"tmicon-check\" :round=\"12\" text :margin=\"[10, 0]\" label=\"QQ\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "状态头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar color=\"orange\" trigger triggerColor=\"red\" triggerIcon=\"tmicon-check\" :round=\"4\" text :margin=\"[10, 0]\" img=\"https://picsum.photos/200/300?id=99\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "边框头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar outlined :round=\"12\" :font-size=\"52\" color=\"pink\" icon=\"tmicon-weixin\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "文本头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar :round=\"12\" text :margin=\"[10, 0]\" label=\"王\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "自定义头像": {
+    "prefix": "tm-avatar",
+    "body": [
+      "<tm-avatar outlined text color=\"grey\" :round=\"12\" :margin=\"[10, 0]\" label=\"王\"></tm-avatar>"
+    ],
+    "description": "tm-avatar"
+  },
+  "角标头像": {
+    "prefix": "tm-avatar:badge",
+    "body": [
+      "<tm-badge count=\"5\" color=\"orange\">",
+      "  <tm-avatar color=\"green\" :font-size=\"42\" :margin=\"[10, 0]\" icon=\"tmicon-QQ\"></tm-avatar>",
+      "</tm-badge>"
+    ],
+    "description": "角标头像"
+  },
+  "二维码": {
+    "prefix": "tm-qrcode",
+    "body": [
+      "<tm-qrcode ref=\"qrcode\" :option=\"cfig\"></tm-qrcode>"
+    ],
+    "description": "二维码"
+  },
+  "红点微标": {
+    "prefix": "tm-badge:dot",
+    "body": [
+      "<tm-badge dot color=\"red\"><tm-text label=\"文本模式\"></tm-text></tm-badge>"
+    ],
+    "description": "tm-badge"
+  },
+  "数字微标": {
+    "prefix": "tm-badge:count",
+    "body": [
+      "<tm-badge :count=\"99999\" :maxCount=\"99\" color=\"red\" linear=\"top\">#</tm-badge>"
+    ],
+    "description": "tm-badge"
+  },
+  "文本微标": {
+    "prefix": "tm-badge:text",
+    "body": [
+      "<tm-badge count=\"热门\" color=\"pink\" linear=\"right\" linearDeep=\"accent\">#</tm-badge>"
+    ],
+    "description": "tm-badge"
+  },
+  "图标微标": {
+    "prefix": "tm-badge:icon",
+    "body": [
+      "<tm-badge icon=\"tmicon-check\" color=\"green\">#</tm-badge>"
+    ],
+    "description": "tm-badge"
+  },
+  "卡片": {
+    "prefix": "tm-card",
+    "body": [
+      "<tm-card status=\"2022-5-2\" title=\"卡片标题\" content=\"这是一个基础卡片示例，非常简单且实用。这是一个基础卡片示例，非常简单且实用。\">",
+      "    <template v-slot:action>",
+      "        <view class=\"flex flex-row flex-row-center-end flex-1\">",
+      "            <tm-button :round=\"24\" :margin=\"[24, 0]\" label=\"确认\" :font-size=\"24\" :width=\"120\" :height=\"64\"></tm-button>",
+      "            <tm-button :round=\"24\" color=\"white\" label=\"取消\" :font-size=\"24\" :width=\"120\" :height=\"64\"></tm-button>",
+      "        </view>",
+      "    </template>",
+      "</tm-card>"
+    ],
+    "description": "卡片"
+  },
+  "轮播": {
+    "prefix": "tm-carousel",
+    "body": [
+      "<tm-carousel autoplay :margin=\"[0, 16]\" :round=\"3\" :width=\"686\" :height=\"300\" :list=\"listimg\"></tm-carousel>"
+    ],
+    "description": "轮播"
+  },
+  "折叠面板": {
+    "prefix": "tm-collapse",
+    "body": [
+      "<tm-collapse :accordion=\"true\" :defaultActiveKey=\"['1']\">",
+      "    <tm-collapse-item title=\"只能展开一个1\" name=\"1\">",
+      "        <view class=\"pa-24\">",
+      "            <tm-text :font-size=\"28\" _class=\"text-weight-b\" label=\"这是折叠面板这是折叠面板这是折叠面板这是折叠面板这是折叠面板\"></tm-text>",
+      "        </view>",
+      "    </tm-collapse-item>",
+      "    <tm-collapse-item color=\"primary\" linear=\"right\" activeColor=\"white\" title=\"随便更改背景\" name=\"2\">",
+      "        <view class=\"pa-24\">",
+      "            <tm-text :font-size=\"28\" _class=\"text-weight-b\" label=\"这是折叠面板这是折叠面板这是折叠面板这是折叠面板这是折叠面板\"></tm-text>",
+      "        </view>",
+      "    </tm-collapse-item>",
+      "    <tm-collapse-item title=\"只能展开一个3\" name=\"3\">",
+      "        <view class=\"pa-24\">",
+      "            <tm-text :font-size=\"28\" _class=\"text-weight-b\" label=\"这是折叠面板这是折叠面板这是折叠面板这是折叠面板这是折叠面板\"></tm-text>",
+      "        </view>",
+      "    </tm-collapse-item>",
+      "</tm-collapse>"
+    ],
+    "description": "折叠面板"
+  },
+  "评论": {
+    "prefix": "tm-comment",
+    "body": [
+      "<tm-comment author=\"同名自定义\" avatar=\"https://picsum.photos/200/200\" time=\"2022/5/20 13:25\" content=\"这是一条最简单的评论内容。\">",
+      "    <template v-slot:actions>",
+      "        <view class=\"flex flex-row norwap\">",
+      "            <view class=\"flex flex-row flex-center pl-16\">",
+      "                <tm-icon :font-size=\"24\" name=\"tmicon-comment-dots\"></tm-icon>",
+      "                <tm-text _class=\"pl-10\" :font-size=\"24\" label=\"125\"></tm-text>",
+      "            </view>",
+      "            <view class=\"flex flex-row flex-center pl-16\">",
+      "                <tm-icon :font-size=\"24\" name=\"tmicon-md-heart\"></tm-icon>",
+      "                <tm-text _class=\"pl-10\" :font-size=\"24\" label=\"125\"></tm-text>",
+      "            </view>",
+      "        </view>",
+      "    </template>",
+      "</tm-comment>"
+    ],
+    "description": "评论"
+  },
+  "评论带回复框": {
+    "prefix": "tm-comment:input",
+    "body": [
+      "<tm-comment author=\"同名自定义\" avatar=\"https://picsum.photos/200/200\" time=\"2022/5/20 13:25\" content=\"您也可配置输入框进行回复操作。\">",
+      "    <tm-input></tm-input>",
+      "    <view class=\"flex flex-row flex-row-center-end\">",
+      "        <tm-button color=\"red\" :margin=\"[24, 0]\" label=\"确认评论\" :font-size=\"24\" :width=\"160\" :height=\"60\"></tm-button>",
+      "        <tm-button color=\"white\" label=\"取消\" :font-size=\"24\" :width=\"120\" :height=\"60\"></tm-button>",
+      "    </view>",
+      "</tm-comment>"
+    ],
+    "description": "评论"
+  },
+  "单元格": {
+    "prefix": "tm-cell",
+    "body": [
+      "<view class=\"mb-32 mx-32 round-3 overflow\">",
+      "    <tm-cell bottomBorder :margin=\"[0, 0, 0, 16]\" :titleFontSize=\"30\" title=\"头像 Avatar\"> </tm-cell>",
+      "    <tm-cell bottomBorder :margin=\"[0, 0,0, 16]\" :titleFontSize=\"30\" title=\"徽标 Badge\"> </tm-cell>",
+      "    <tm-cell :margin=\"[0, 0, 0, 16]\" :titleFontSize=\"30\" title=\"卡片 Card\"> </tm-cell>",
+      "    <tm-cell showAvatar avatar=\"https://picsum.photos/200\" rightText=\"简单组件简单组件\" :margin=\"[0, 0]\" :titleFontSize=\"30\" title=\"头像 Avatar\" >",
+      "    </tm-cell>",
+      "    <tm-cell :margin=\"[0, 0]\" :titleFontSize=\"30\" title=\"徽标 Badge\">",
+      "        <template v-slot:right>",
+      "            <tm-checkbox :round=\"12\"></tm-checkbox>",
+      "        </template>",
+      "    </tm-cell>",
+      "    <tm-cell :margin=\"[0, 0]\" :titleFontSize=\"30\" title=\"卡片 Card\"> </tm-cell>",
+      "</view>"
+    ],
+    "description": "单元格"
+  },
+  "图片": {
+    "prefix": "tm-image",
+    "body": [
+      "<tm-image preview :width=\"300\" :height=\"200\" src=\"https://store.tmui.design/api_v2/public/random_picture\"></tm-image>"
+    ],
+    "description": "图片"
+  },
+  "扩展图片": {
+    "prefix": "tm-image:extra",
+    "body": [
+      "<tm-image extra preview :width=\"300\" :height=\"200\" src=\"https://store.tmui.design/api_v2/public/random_picture?random=3\">",
+      "    <template v-slot:extra>",
+      "        <tm-sheet :margin=\"[0, 0]\" :padding=\"[12, 10]\" _class=\"flex-row flex-between \" parenClass=\"opacity-6\">",
+      "            <view class=\"flex flex-row flex-center pl-16\">",
+      "                <tm-icon :font-size=\"24\" name=\"tmicon-comment-dots\"></tm-icon>",
+      "                <tm-text _class=\"pl-10\" :font-size=\"24\" label=\"125\"></tm-text>",
+      "            </view>",
+      "            <view class=\"flex flex-row flex-center pl-16\">",
+      "                <tm-icon :font-size=\"24\" name=\"tmicon-md-heart\"></tm-icon>",
+      "                <tm-text _class=\"pl-10\" :font-size=\"24\" label=\"125\"></tm-text>",
+      "            </view>",
+      "        </tm-sheet>",
+      "    </template>",
+      "</tm-image>"
+    ],
+    "description": "扩展图片"
+  },
+  "气泡": {
+    "prefix": "tm-popover",
+    "body": [
+      "<tm-popover color=\"red\">",
+      "  <tm-text label=\"汽泡上中\"></tm-text>",
+      "</tm-popover>"
+    ],
+    "description": "气泡"
+  },
+  "气泡菜单": {
+    "prefix": "tm-popover:menu",
+    "body": [
+      "<tm-popover position=\"bl\" :width=\"400\" linear=\"bottom\" color=\"primary\">",
+      "  <tm-text color=\"primary\" label=\"点我弹出更多菜单\"></tm-text>",
+      "  <template v-slot:label>",
+      "    <view class=\"flex flex-row flex-row-center-center\">",
+      "      <tm-tag label=\"删除订单\"></tm-tag>",
+      "      <tm-tag label=\"申请发票\"></tm-tag>",
+      "    </view>",
+      "  </template>",
+      "</tm-popover>"
+    ],
+    "description": "气泡菜单"
+  },
+  "表格": {
+    "prefix": "tm-table",
+    "body": [
+      "<tm-table :table-data=\"data\" :stripe=\"stripe\" :showHeader=\"showFixed\" @rowClick=\"onClick\" :height=\"650\" :width=\"638\"></tm-table>"
+    ],
+    "description": "表格"
+  },
+  "选项卡": {
+    "prefix": "tm-tabs",
+    "body": [
+      "<tm-tabs @change=\"tabschange\" showTabsLineAni :list=\"tabsTitle\" :item-width=\"180\" :width=\"636\" default-name=\"2\"></tm-tabs>"
+    ],
+    "description": "选项卡"
+  },
+  "微型标签": {
+    "prefix": "tm-tag:xs",
+    "body": [
+      "<tm-tag size=\"xs\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "微型标签"
+  },
+  "小标签": {
+    "prefix": "tm-tag:s",
+    "body": [
+      "<tm-tag color=\"green\" size=\"s\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "小标签"
+  },
+  "中标签": {
+    "prefix": "tm-tag:m",
+    "body": [
+      "<tm-tag color=\"orange\" size=\"m\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "中标签"
+  },
+  "大标签": {
+    "prefix": "tm-tag:n",
+    "body": [
+      "<tm-tag color=\"red\" size=\"n\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "大标签"
+  },
+  "巨型标签": {
+    "prefix": "tm-tag:g",
+    "body": [
+      "<tm-tag color=\"blue\" size=\"g\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "巨型标签"
+  },
+  "可关闭标签": {
+    "prefix": "tm-tag:closable",
+    "body": [
+      "<tm-tag closable color=\"green\" size=\"n\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "可关闭标签"
+  },
+  "异步关闭": {
+    "prefix": "tm-tag:closable:async",
+    "body": [
+      "<tm-tag :before-close=\"testClose\" closable color=\"red\" size=\"n\" label=\"异步关闭\"></tm-tag>"
+    ],
+    "description": "异步关闭"
+  },
+  "图标标签": {
+    "prefix": "tm-tag:icon",
+    "body": [
+      "<tm-tag text :shadow=\"0\" icon=\"tmicon-weixinzhifu\" color=\"orange\" size=\"m\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "图标标签"
+  },
+  "标签": {
+    "prefix": "tm-tag",
+    "body": [
+      "<tm-tag text :shadow=\"0\" color=\"red\" size=\"m\" label=\"标签\"></tm-tag>"
+    ],
+    "description": "标签"
+  },
+  "浅边框": {
+    "prefix": "tm-tag:outlined",
+    "body": [
+      "<tm-tag text outlined :shadow=\"0\" color=\"red\" size=\"m\" label=\"浅边框\"></tm-tag>"
+    ],
+    "description": "浅边框"
+  },
+  "自定边框": {
+    "prefix": "tm-tag:outlined",
+    "body": [
+      "<tm-tag outlined :shadow=\"0\" color=\"grey\" font-color=\"black\" border-color=\"black\" size=\"m\" label=\"自定边框\"></tm-tag>"
+    ],
+    "description": "自定边框"
+  },
+  "圆角标签": {
+    "prefix": "tm-tag:border",
+    "body": [
+      "<tm-tag :round=\"10\" text :border=\"1\" borderStyle=\"dashed\" :shadow=\"0\" color=\"red\" size=\"m\" label=\"标签\"> </tm-tag>"
+    ],
+    "description": "圆角标签"
+  },
+  "加载中标签": {
+    "prefix": "tm-tag:loading",
+    "body": [
+      "<tm-tag load text :border=\"1\" borderStyle=\"dashed\" :shadow=\"0\" color=\"green\" size=\"m\" label=\"加载中\"> </tm-tag>"
+    ],
+    "description": "加载中标签"
+  },
+  "可选中标签": {
+    "prefix": "tm-tag:checkable",
+    "body": [
+      "<tm-tag checkable color=\"orange\" size=\"n\" label=\"点我切换选中\"></tm-tag>"
+    ],
+    "description": "可选中标签"
+  },
+  "时间轴": {
+    "prefix": "tm-timeline",
+    "body": [
+      "<view>",
+      "    <tm-timeline>",
+      "        <tm-timeline-item color=\"green\" :size=\"32\" type=\"fill\" icon=\"tmicon-check\" time=\"20222-3-25\">",
+      "            <tm-sheet no-level :shadow=\"2\" :round=\"3\" :margin=\"[0, 10]\">",
+      "                <tm-text",
+      "                    label=\"已经到了中转站，请注意查收已经到了中转站，请注意查收已经到了中转站，请注意查收已经到了中转站，请注意查收\"",
+      "                ></tm-text>",
+      "            </tm-sheet>",
+      "        </tm-timeline-item>",
+      "        <tm-timeline-item color=\"red\" time=\"20222-3-25\">",
+      "            <tm-sheet no-level :shadow=\"2\" :round=\"3\" :margin=\"[0, 10]\">",
+      "                <tm-text",
+      "                    label=\"已经到了中转站，请注意查收已经到了中转站，请注意查收已经到了中转站，请注意查收已经到了中转站，请注意查收\"",
+      "                ></tm-text>",
+      "            </tm-sheet>",
+      "        </tm-timeline-item>",
+      "        <tm-timeline-item color=\"blue\" time=\"20222-3-25\">",
+      "            <tm-sheet no-level :shadow=\"2\" :round=\"3\" :margin=\"[0, 10]\">",
+      "                <tm-text",
+      "                    label=\"已经到了中转站，请注意查收已经到了中转站，请注意查收已经到了中转站，请注意查收已经到了中转站，请注意查收\"",
+      "                ></tm-text>",
+      "            </tm-sheet>",
+      "        </tm-timeline-item>",
+      "    </tm-timeline>",
+      "</view>"
+    ],
+    "description": "时间轴"
+  },
+  "虚拟列表": {
+    "prefix": "tm-virtual-list",
+    "body": [
+      "<view class=\"flex flex-col flex-col-top-center\">",
+      "    <tm-virtual-list :scrollViewInTo=\"test\" :load=\"getdata\" :width=\"626\" :height=\"900\" :data=\"imglist\" :itemHeight=\"160\">",
+      "        <template v-slot:default=\"{ data }\">",
+      "            <tm-sheet",
+      "                :border=\"1\"",
+      "                borderDirection=\"bottom\"",
+      "                :height=\"160\"",
+      "                :width=\"626\"",
+      "                _class=\"flex flex-row flex-row-center-start\"",
+      "                :padding=\"[0, 0]\"",
+      "                :margin=\"[0, 0]\"",
+      "                v-for=\"(item, index) in data\"",
+      "                :key=\"index\"",
+      "            >",
+      "                <view class=\"flex flex-row flex-row-center-between flex-1\">",
+      "                    <tm-image :width=\"200\" :height=\"100\" :src=\"item.src\"></tm-image>",
+      "                    <tm-text :label=\"'image-Row-' + item.index\"></tm-text>",
+      "                </view>",
+      "            </tm-sheet>",
+      "        </template>",
+      "    </tm-virtual-list>",
+      "</view>"
+    ],
+    "description": "虚拟列表"
+  },
+  "瀑布流": {
+    "prefix": "tm-waterfall",
+    "body": [
+      "<view class=\"flex flex-col flex-col-top-center\">",
+      "    <tm-waterfall ref=\"wall\" :width=\"718\">",
+      "        <tm-waterfall-item @click=\"itemClick\" :img=\"item.img\" v-for=\"(item, index) in imglist\">",
+      "            <view class=\"pt-12 pb-12 px-12\">",
+      "                <tm-text :label=\"item.text\" _class=\"text-overflow-2\"></tm-text>",
+      "                <view class=\"flex flex-row flex-row-bottom-start mt-24\">",
+      "                    <!-- <tm-text color=\"orange\" :font-size=\"24\" label='¥'></tm-text> -->",
+      "                    <tm-text color=\"orange\" _class=\"px-10\" :font-size=\"36\" :label=\"item.price\"></tm-text>",
+      "                    <tm-text color=\"grey\" :font-size=\"24\" :label=\"item.num\"></tm-text>",
+      "                </view>",
+      "            </view>",
+      "        </tm-waterfall-item>",
+      "    </tm-waterfall>",
+      "</view>"
+    ],
+    "description": "瀑布流"
+  },
+  "多选组": {
+    "prefix": "tm-checkbox:group",
+    "body": [
+      "<tm-sheet :margin=\"[32, 0]\">",
+      "    <tm-text :font-size=\"24\" _class=\"text-weight-b\" label=\"选择组\"></tm-text>",
+      "    <tm-divider></tm-divider>",
+      "    <view class=\"pb-24\">",
+      "        <tm-text :label=\"str ? str : '请选择'\"></tm-text>",
+      "    </view>",
+      "    <tm-checkbox :indeterminate=\"banxuan\" v-model=\"allCheckbox\" @change=\"allChange\" :value=\"true\" label=\"全选\"></tm-checkbox>",
+      "    <tm-checkbox-group @change=\"boxlistchange\" v-model=\"checkboxlist\" direction=\"customCol\">",
+      "        <tm-checkbox",
+      "            value=\"apple\"",
+      "            label=\"苹果常规赋值测试3.2秒后观察自动选中结果常规赋值测试3.2秒后观察自动选中结果常规赋值测试3.2秒后观察自动选中结果\"",
+      "        ></tm-checkbox>",
+      "        <tm-checkbox color=\"orange\" value=\"banner\" label=\"香蕉\"></tm-checkbox>",
+      "        <tm-checkbox color=\"pink\" value=\"test\" label=\"测试项\"></tm-checkbox>",
+      "        <tm-checkbox color=\"green\" value=\"other\" label=\"其它水果\"></tm-checkbox>",
+      "    </tm-checkbox-group>",
+      "</tm-sheet>"
+    ],
+    "description": "多选"
+  },
+  "多选": {
+    "prefix": "tm-checkbox",
+    "body": [
+      "<tm-checkbox outlined label=\"苹果\"></tm-checkbox>"
+    ],
+    "description": "多选"
+  },
+  "日历": {
+    "prefix": "tm-calendar",
+    "body": [
+      "<tm-calendar",
+      "    format=\"YYYY年MM月DD日\"",
+      "    :dateStyle=\"dateStyle\"",
+      "    @click=\"test\"",
+      "    :multiple=\"multiple\"",
+      "    color=\"red\"",
+      "    v-model:show=\"showdate\"",
+      "    v-model:model-str=\"dateStr\"",
+      "    :model=\"modeltype\"",
+      "></tm-calendar>"
+    ],
+    "description": "日历"
+  },
+  "城市选择": {
+    "prefix": "tm-city-picker",
+    "body": [
+      "<tm-cell @click=\"showdate = true\" title=\"请选择所在区域\" :right-text=\"dateStr || '请选择'\"></tm-cell>",
+      "<tm-city-picker v-model:show=\"showdate\" v-model=\"citydate\" v-model:model-str=\"dateStr\"></tm-city-picker>"
+    ],
+    "description": "城市选择"
+  },
+  "表单示例": {
+    "prefix": "tm-form:demo",
+    "body": [
+      "<tm-form @submit=\"confirm\" ref=\"form\" v-model=\"show\" :label-width=\"190\" >",
+      "    <tm-form-item",
+      "        desc=\"你可以点击提交表单来验证\"",
+      "        required",
+      "        label=\"身份证号码\"",
+      "        field=\"nameuser.a\"",
+      "        :rules=\"[",
+      "            { required: true, message: '不能为空', validator: (val) => val.length > 0 },",
+      "            { required: true, message: '请输入66', validator: (val) => val == '66' }",
+      "        ]\"",
+      "    >",
+      "        <!-- 不要问我为什么用v-model.lazy，我很受伤。 -->",
+      "        <tm-input :inputPadding=\"[0, 0]\" v-model.lazy=\"show.nameuser.a\" :transprent=\"true\" :showBottomBotder=\"false\"> </tm-input>",
+      "    </tm-form-item>",
+      "    <tm-form-item required label=\"选择日期\" field=\"cale\" :rules=\"[{ required: true, message: '请选择日期哦' }]\">",
+      "        <view @click=\"showCal = !showCal\" class=\"flex flex-row flex-row-center-between\">",
+      "            <tm-text :userInteractionEnabled=\"false\" :label=\"caleStr || '请选择有效日期'\"></tm-text>",
+      "            <tm-icon :userInteractionEnabled=\"false\" :font-size=\"24\" name=\"tmicon-angle-right\"></tm-icon>",
+      "        </view>",
+      "    </tm-form-item>",
+      "    <tm-form-item",
+      "        :padding=\"[0, 0]\"",
+      "        requiredTitleChangeColor",
+      "        label=\"选择地区\"",
+      "        field=\"city\"",
+      "        required",
+      "        :rules=\"[{ required: true, message: '请选择地区' }]\"",
+      "    >",
+      "        <view @click=\"testClick\" class=\"flex flex-row flex-row-center-between\">",
+      "            <tm-text :userInteractionEnabled=\"false\" :label=\"show.cityStr || '请选择所在地区地址'\"></tm-text>",
+      "            <tm-icon :userInteractionEnabled=\"false\" :font-size=\"24\" name=\"tmicon-angle-right\"></tm-icon>",
+      "        </view>",
+      "    </tm-form-item>",
+      "    <tm-form-item required label=\"时间选择\" field=\"time\" :rules=\"[{ required: true, message: '请选择时间+++' }]\">",
+      "        <view @click=\"showTimePickerView = !showTimePickerView\" class=\"flex flex-row flex-row-center-between\">",
+      "            <tm-text :userInteractionEnabled=\"false\" :label=\"timeStr || '请选择时间'\"></tm-text>",
+      "            <tm-icon :userInteractionEnabled=\"false\" :font-size=\"24\" name=\"tmicon-angle-right\"></tm-icon>",
+      "        </view>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item required label=\"弹出选择\" field=\"pickerStr\" :rules=\"[{ required: true, message: '请选择水果种类' }]\">",
+      "        <view @click=\"showPicker = !showPicker\" class=\"flex flex-row flex-row-center-between\">",
+      "            <tm-text :userInteractionEnabled=\"false\" :label=\"show.pickerStr || '请选择水果呀'\"></tm-text>",
+      "            <tm-icon :userInteractionEnabled=\"false\" :font-size=\"24\" name=\"tmicon-angle-right\"></tm-icon>",
+      "        </view>",
+      "    </tm-form-item>",
+      "    <tm-form-item required label=\"选择水果\" field=\"radio\" :rules=\"[{ required: true, message: '请选择水果' }]\">",
+      "        <tm-radio-group v-model=\"show.radio\">",
+      "            <tm-radio label=\"苹果\" value=\"apple\"></tm-radio>",
+      "            <tm-radio label=\"香焦\" value=\"bonaer\"></tm-radio>",
+      "        </tm-radio-group>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item required label=\"多选水果种类\" field=\"checkbox\" :rules=\"[{ required: true, message: '请选择' }]\">",
+      "        <tm-checkbox-group v-model=\"show.checkbox\">",
+      "            <tm-checkbox label=\"苹果\" value=\"apple\"></tm-checkbox>",
+      "            <tm-checkbox label=\"香焦\" value=\"bonaer\"></tm-checkbox>",
+      "            <tm-checkbox label=\"香焦\" value=\"bonaer2\"></tm-checkbox>",
+      "            <tm-checkbox label=\"香焦\" value=\"bonaer3\"></tm-checkbox>",
+      "            <tm-checkbox label=\"香焦\" value=\"bonaer4\"></tm-checkbox>",
+      "        </tm-checkbox-group>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item required label=\"评分\" field=\"rate\" :rules=\"[{ required: true, message: '请选择' }]\">",
+      "        <tm-rate v-model=\"show.rate\" :default-value=\"show.rate\"></tm-rate>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item",
+      "        required",
+      "        label=\"价格选择\"",
+      "        field=\"slider\"",
+      "        :rules=\"[{ required: true, message: '请选择', validator: (val) => val.reduce((a, b) => Math.abs(a - b)) !== 0 }]\"",
+      "    >",
+      "        <tm-slider :width=\"450\" v-model=\"show.slider\" :default-value=\"show.slider\"></tm-slider>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item required label=\"分割选择\" field=\"segtab\" :rules=\"[{ required: true, message: '请选择' }]\">",
+      "        <tm-segtab :width=\"420\" :list=\"[{ text: '苹果' }, { text: '香蕉' }]\" v-model=\"show.segtab\" :default-value=\"show.segtab\"></tm-segtab>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item label=\"开关\" field=\"switch\" :rules=\"{ required: true, message: '没有选中哦' }\">",
+      "        <tm-switch v-model=\"show.switch\" :default-value=\"show.switch\" selected=\"hehe\"></tm-switch>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item required label=\"上传截图\" field=\"upload\" :rules=\"{ required: true, message: '请上传' }\">",
+      "        <tm-upload",
+      "            :rows=\"3\"",
+      "            :width=\"420\"",
+      "            :default-value=\"show.upload\"",
+      "            url=\"https://mockapi.eolink.com/tNYKNA7ac71aa90bcbe83c5815871a5b419601e96a5524d/upload\"",
+      "            v-model=\"show.upload\"",
+      "        ></tm-upload>",
+      "    </tm-form-item>",
+      "",
+      "    <tm-form-item :border=\"false\">",
+      "        <view class=\"flex flex-row\">",
+      "            <view class=\"flex-1 mr-32\">",
+      "                <tm-button form-type=\"submit\" label=\"提交表单\" block></tm-button>",
+      "            </view>",
+      "            <view class=\"flex-1\">",
+      "                <tm-button :shadow=\"0\" text form-type=\"reset\" label=\"重置表单\" block></tm-button>",
+      "            </view>",
+      "        </view>",
+      "    </tm-form-item>",
+      "</tm-form>",
+      "",
+      "<tm-calendar v-model=\"show.cale\" v-model:show=\"showCal\" :default-value=\"show.cale\"></tm-calendar>",
+      "<tm-city-picker v-model=\"show.city\" v-model:model-str=\"show.cityStr\" v-model:show=\"showCity\" :default-value=\"show.city\"></tm-city-picker>",
+      "<tm-time-picker",
+      "    v-model=\"show.time\"",
+      "    v-model:show=\"showTimePickerView\"",
+      "    :show-detail=\"{ year: false, month: false, day: true, hour: true }\"",
+      "></tm-time-picker>",
+      "",
+      "<tm-picker",
+      "    :columns=\"pickerlist\"",
+      "    v-model:model-str=\"show.pickerStr\"",
+      "    v-model:show=\"showPicker\"",
+      "    :default-value=\"show.pickerIndex\"",
+      "    v-model=\"show.pickerIndex\"",
+      "></tm-picker>"
+    ],
+    "description": "表单示例"
+  },
+  "表单": {
+    "prefix": "tm-form",
+    "body": [
+      "<tm-form @submit=\"confirm\" ref=\"form\" v-model=\"show\" :label-width=\"190\" >",
+      "    <tm-form-item",
+      "        desc=\"你可以点击提交表单来验证\"",
+      "        required",
+      "        label=\"身份证号码\"",
+      "        field=\"nameuser.a\">",
+      "        <!-- 不要问我为什么用v-model.lazy，我很受伤。 -->",
+      "        <tm-input :inputPadding=\"[0, 0]\" v-model.lazy=\"show.nameuser.a\" :transprent=\"true\" :showBottomBotder=\"false\"> </tm-input>",
+      "    </tm-form-item>",
+      "</tm-form>"
+    ],
+    "description": "表单"
+  },
+  "输入框隐藏内容": {
+    "prefix": "tm-input:password",
+    "body": [
+      "<tm-input :margin=\"[0, 24]\" password placeholder=\"请输入密码,显示隐藏内容\" prefix=\"tmicon-lock-fill\"></tm-input>"
+    ],
+    "description": "输入框"
+  },
+  "输入框自动增高": {
+    "prefix": "tm-input:auto",
+    "body": [
+      "<tm-input :inputPadding=\"[12]\" placeholder=\"文本域，输入自动增高。\" confirm-hold confirm-type=\"换行\" showCharNumber :maxlength=\"100\" :border=\"1\" color=\"grey-5\" autoHeight type=\"textarea\"></tm-input>"
+    ],
+    "description": "输入框"
+  },
+  "输入框带单位": {
+    "prefix": "tm-input:suffix",
+    "body": [
+      "<tm-input prefix=\"tmicon-dollar\" suffixLabel=\"元\" :margin=\"[0, 24]\"></tm-input>"
+    ],
+    "description": "输入框"
+  },
+  "输入框搜索": {
+    "prefix": "tm-input:search",
+    "body": [
+      "<tm-input :searchWidth=\"120\" @search=\"search\" prefix=\"tmicon-search\" searchLabel=\"搜索\"></tm-input>"
+    ],
+    "description": "输入框"
+  },
+  "输入框带图标": {
+    "prefix": "tm-input:prefix",
+    "body": [
+      "<tm-input color=\"primary\" prefix=\"tmicon-user-fill\"></tm-input>"
+    ],
+    "description": "输入框"
+  },
+  "输入框带颜色": {
+    "prefix": "tm-input:color",
+    "body": [
+      "<tm-input color=\"primary\" focusColor=\"green\" prefix=\"tmicon-user-fill\"></tm-input>"
+    ],
+    "description": "输入框"
+  },
+  "键盘": {
+    "prefix": "tm-keyboard",
+    "body": [
+      "<tm-cell @click=\"showdate = true\" title=\"弹出键盘\" rightColor=\"primary\" :right-text=\"dateStr\"></tm-cell>",
+      "<tm-keyboard decimal :type=\"password|card|car|number\" v-model=\"dateStr\" v-model:show=\"showdate\"></tm-keyboard>"
+    ],
+    "description": "键盘"
+  },
+  "选择器": {
+    "prefix": "tm-picker",
+    "body": [
+      "<tm-cell @click=\"showdateq = true\" title=\"这里联动上边\" :right-text=\"dateStr2 || '请选择'\"></tm-cell>",
+      "<tm-picker :defaultValue=\"pickydata\" @confirm=\"pickok\"",
+      " v-model:show=\"showdate\" :columns=\"citydate3\"",
+      " v-model=\"pickydata\" v-model:model-str=\"dateStr\">",
+      "</tm-picker>"
+    ],
+    "description": "选择器"
+  },
+  "评分": {
+    "prefix": "tm-rate",
+    "body": [
+      "<tm-rate :color=\"['red', 'orange', 'primary', 'pink', 'green']\" showLabel></tm-rate>",
+      ""
+    ],
+    "description": "评分"
+  },
+  "单选框": {
+    "prefix": "tm-radio",
+    "body": [
+      "<tm-radio-group v-model=\"radiolist\" :defaultValue=\"radiolist\">",
+      " <tm-radio outlined value=\"apple\" label=\"苹果基础示例\"></tm-radio>",
+      " <tm-radio color=\"orange\" value=\"banner\" label=\"香蕉\"></tm-radio>",
+      " <tm-radio color=\"pink\" value=\"test\" label=\"测试项\"></tm-radio>",
+      " <tm-radio color=\"green\" value=\"other\" label=\"其它水果\"></tm-radio>",
+      "</tm-radio-group>"
+    ],
+    "description": "单选框"
+  },
+  "单选按钮": {
+    "prefix": "tm-radio:button",
+    "body": [
+      "<tm-radio-group model=\"button\" v-model=\"radio\"  :defaultValue=\"radio\">",
+      " <tm-radio :value=\"true\" label=\"选我呀\"></tm-radio>",
+      " <tm-radio :value=\"false\" label=\"不要选我呀\"></tm-radio>",
+      "</tm-radio-group>"
+    ],
+    "description": "单选框"
+  },
+  "步进器": {
+    "prefix": "tm-stepper",
+    "body": [
+      "<tm-stepper @change=\"changeVal\" v-model=\"test.a\" :defaultValue=\"20\"></tm-stepper>"
+    ],
+    "description": "步进器"
+  },
+  "步进器-圆形": {
+    "prefix": "tm-stepper:circular",
+    "body": [
+      "<tm-stepper v-model=\"val\" color=\"red\" bgColor=\"red\" :step=\"1\" :min=\"0\" :max=\"10\" circular :defaultValue=\"0\"></tm-stepper>"
+    ],
+    "description": "步进器"
+  },
+  "步进器-动作": {
+    "prefix": "tm-stepper:action",
+    "body": [
+      "<tm-stepper :width=\"200\" :height=\"62\" :beforeEnter=\"beforeEnter\" color=\"red\" linear=\"bottom\" bgColor=\"red\" circular :defaultValue=\"20\"></tm-stepper>"
+    ],
+    "description": "步进器"
+  },
+  "滑块": {
+    "prefix": "tm-slider",
+    "body": [
+      "<tm-slider color=\"primary\" :width=\"600\" :height=\"6\" :defaultValue=\"20\"></tm-slider>"
+    ],
+    "description": "滑块"
+  },
+  "滑块-区间": {
+    "prefix": "tm-slider:between",
+    "body": [
+      "<tm-slider  :formart=\"formart\" :step=\"5\" showLabel color=\"green\" :width=\"600\" :height=\"6\" :defaultValue=\"[5, 50]\"></tm-slider>"
+    ],
+    "description": "滑块"
+  },
+  "开关-小": {
+    "prefix": "tm-switch:mini",
+    "body": [
+      "<tm-switch offIcon=\"tmicon-times\" size=\"mini\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关-中": {
+    "prefix": "tm-switch:normal",
+    "body": [
+      "<tm-switch size=\"normal\" color=\"red\" :defaultValue=\"true\" :margin=\"[12, 0]\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关-大": {
+    "prefix": "tm-switch:large",
+    "body": [
+      "<tm-switch size=\"large\" color=\"green\" :defaultValue=\"true\" :margin=\"[12, 0]\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关": {
+    "prefix": "tm-switch",
+    "body": [
+      "<tm-switch linear=\"left\" linearDeep=\"accent\" :defaultValue=\"true\" :margin=\"[12, 0]\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关-文本": {
+    "prefix": "tm-switch:label",
+    "body": [
+      "<tm-switch unCheckedColor=\"red\" color=\"red\" text :label=\"['开', '关']\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关-方形": {
+    "prefix": "tm-switch:round",
+    "body": [
+      "<tm-switch :label=\"['形状', '方形']\" :width=\"200\" :height=\"58\" :round=\"2\" color=\"green\" :defaultValue=\"true\" :margin=\"[12, 0]\" ></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关-加载中": {
+    "prefix": "tm-switch:load",
+    "body": [
+      "<tm-switch load linear=\"left\" linearDeep=\"accent\" color=\"red\" :defaultValue=\"true\" :margin=\"[12, 0]\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关-禁用": {
+    "prefix": "tm-switch:disabled",
+    "body": [
+      "<tm-switch disabled linear=\"left\" linearDeep=\"accent\" color=\"green\" :defaultValue=\"true\" :margin=\"[12, 0]\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "开关-异步": {
+    "prefix": "tm-switch:action",
+    "body": [
+      "<tm-switch :beforeChecked=\"beforeChecked\" linear=\"left\" linearDeep=\"accent\" color=\"blue\" :margin=\"[12, 0]\"></tm-switch>"
+    ],
+    "description": "开关"
+  },
+  "时间选择器": {
+    "prefix": "tm-time-picker",
+    "body": [
+      "<tm-cell @click=\"showdate = true\" title=\"请选择时间\" :right-text=\"dateStr || '请选择'\"></tm-cell>",
+      "<tm-time-picker",
+      "        :showDetail=\"{",
+      "                year: true,",
+      "                month: true,",
+      "                day: true,",
+      "                hour: true,",
+      "                minute: true,",
+      "                second: true",
+      "        }\"",
+      "        v-model:show=\"showdate\"",
+      "        v-model=\"dateSAva\"",
+      "        :defaultValue=\"dateSAva\"",
+      "        format=\"YYYY年MM月DD日\"",
+      "        v-model:model-str=\"dateStr\"",
+      "></tm-time-picker>"
+    ],
+    "description": "时间选择器"
+  },
+  "图片上传": {
+    "prefix": "tm-upload",
+    "body": [
+      "<tm-upload showSort :onStart=\"onStart\" v-model=\"list\" ref=\"up\" :width=\"636\" :rows=\"4\" url=\"https://mockapi.eolink.com/tNYKNA7ac71aa90bcbe83c5815871a5b419601e96a5524d/upload\" @complate=\"complateFile\">"
+    ],
+    "description": "图片上传"
+  },
+  "文件上传": {
+    "prefix": "tm-upload-file",
+    "body": [
+      "<tm-upload-file :config=\"{hostUrl:'https://mockapi.eolink.com/tNYKNA7ac71aa90bcbe83c5815871a5b419601e96a5524d/upload'}\" v-model:uploading=\"uploading\" v-model=\"list\" :defaultValue=\"list\"></tm-upload-file>"
+    ],
+    "description": "文件上传"
+  },
+  "时间周": {
+    "prefix": "tm-weekbar",
+    "body": [
+      "<tm-weekbar itemSelectedBgColor=\"rgb(1, 99, 255)\" activeColor=\"white\" model=\"custom\" :dayNumber=\"7\"></tm-weekbar>"
+    ],
+    "description": "时间周"
+  },
+  "时间范围选择器": {
+    "prefix": "tm-time-between",
+    "body": [
+      "<tm-cell @click=\"show = true\" :margin=\"[16, 16]\" :round=\"6\" :right-text=\"datevalue_str || '请选择时间'\" title=\"弹层式选择时间\"></tm-cell>",
+      "<tm-drawer v-model:show=\"show\" :height=\"900\" hideHeader>",
+      "        <view class=\"pa-16\">",
+      "                <tm-time-between @confirm=\"show = false\" :asyncModel=\"false\"></tm-time-between>",
+      "        </view>",
+      "</tm-drawer>"
+    ],
+    "description": "时间范围选择器"
+  },
+  "警告提示-阴影": {
+    "prefix": "tm-alert:shadow",
+    "body": [
+      "<tm-alert :shadow=\"2\" :content=\"content\" :height=\"80\"></tm-alert>"
+    ],
+    "description": "警告提示"
+  },
+  "警告提示-渐变": {
+    "prefix": "tm-alert:linear",
+    "body": [
+      "<tm-alert color=\"orange\" linear=\"right\" :content=\"content\" :height=\"80\"></tm-alert>"
+    ],
+    "description": "警告提示"
+  },
+  "警告提示-抬头内容": {
+    "prefix": "tm-alert:content:title",
+    "body": [
+      "<tm-alert color=\"pink\" linearDeep=\"accent\" linear=\"right\" :content=\"content2\" :height=\"140\"></tm-alert>"
+    ],
+    "description": "警告提示"
+  },
+  "警告提示-图标": {
+    "prefix": "tm-alert:content:icon",
+    "body": [
+      "<tm-alert :content=\"content\" text :height=\"80\"></tm-alert>"
+    ],
+    "description": "警告提示"
+  },
+  "警告提示-边框": {
+    "prefix": "tm-alert:border",
+    "body": [
+      "<tm-alert color=\"green\" text :border=\"1\" :content=\"content\" :height=\"80\"></tm-alert>"
+    ],
+    "description": "警告提示"
+  },
+  "警告提示": {
+    "prefix": "tm-alert:outlined",
+    "body": [
+      "<tm-alert color=\"blue\" outlined border-style=\"dashed\" :border=\"1\" :content=\"content\" :height=\"80\"></tm-alert>"
+    ],
+    "description": "警告提示"
+  },
+  "抽屉": {
+    "prefix": "tm-drawer",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"changPos('bottom')\" color=\"white\" :width=\"120\" :height=\"56\" :font-size=\"24\" label=\"底部\"></tm-button>",
+      "<tm-drawer ref=\"calendarView\" :placement=\"pos\" v-model:show=\"showWin\">",
+      "        <tm-button",
+      "                :margin=\"[12, 12]\"",
+      "                @click=\"showWin2 = true\"",
+      "                color=\"green\"",
+      "                :width=\"160\"",
+      "                :height=\"56\"",
+      "                :font-size=\"24\"",
+      "                label=\"内弹出盖内部\"",
+      "        ></tm-button>",
+      "        <tm-button",
+      "                :margin=\"[12, 12]\"",
+      "                @click=\"showWin3 = true\"",
+      "                color=\"green\"",
+      "                :width=\"160\"",
+      "                :height=\"56\"",
+      "                :font-size=\"24\"",
+      "                label=\"内弹出盖全屏\"",
+      "        ></tm-button>",
+      "        <tm-drawer inContent :width=\"300\" :height=\"300\" ref=\"calendarView\" :placement=\"pos\" v-model:show=\"showWin2\"> </tm-drawer>",
+      "        <tm-drawer :width=\"300\" :height=\"300\" ref=\"calendarView\" :placement=\"pos\" v-model:show=\"showWin3\"> </tm-drawer>",
+      "        <!-- inContent -->",
+      "        <!-- <tm-picker :height=\"500\" inContent v-model:show=\"showWin2\" :columns=\"citydate\"></tm-picker> -->",
+      "</tm-drawer>",
+      "",
+      "<!-- js",
+      "const showWin = ref(false)",
+      "const showWin2 = ref(false)",
+      "const showWin3 = ref(false)",
+      "const pos = ref('bottom')",
+      "function changPos(params: string) {",
+      "        pos.value = params",
+      "        showWin.value = true",
+      "}",
+      "-->"
+    ],
+    "description": "抽屉"
+  },
+  "列表拖拽排序": {
+    "prefix": "tm-drag-list",
+    "body": [
+      "<tm-drag-list :list=\"list\"></tm-drag-list>",
+      "<!-- js",
+      "const list = ref([{ text: '测试项目1-1' }, { text: '测试项目2-1' }, { text: '测试项目3-1' }, { text: '测试项目4-1' }, { text: '测试项目5-1' }])",
+      "-->"
+    ],
+    "description": "列表拖拽排序"
+  },
+  "对话框-插槽": {
+    "prefix": "tm-modal:slot",
+    "body": [
+      "<tm-modal title=\"插槽触发\">",
+      "        <template v-slot:trigger>",
+      "                <tm-button",
+      "                        block",
+      "                        :margin=\"[12, 12]\"",
+      "                        :padding=\"[24, 0]\"",
+      "                        color=\"grey-1\"",
+      "                        :height=\"56\"",
+      "                        :font-size=\"24\"",
+      "                        label=\"通过插槽触发弹层\"",
+      "                ></tm-button>",
+      "        </template>",
+      "        <tm-text :font-size=\"32\" label=\"这里通过插槽触发弹层,无需定义show变量来控制显示和隐藏.\"></tm-text>",
+      "</tm-modal>"
+    ],
+    "description": "对话框"
+  },
+  "对话框": {
+    "prefix": "tm-modal",
+    "body": [
+      "<tm-button :margin=\"[0, 12]\" @click=\"showWin = true\" color=\"white\" :width=\"120\" :height=\"56\" :font-size=\"24\" label=\"默认\"></tm-button>",
+      "<tm-modal title=\"信息框\" content=\"主体内容哦\" v-model:show=\"showWin\"></tm-modal>"
+    ],
+    "description": "对话框"
+  },
+  "全局提示": {
+    "prefix": "tm-message",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ text: '默认默认默认默认默认默认默认默认默认默认默认' })\" color=\"white\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"默认\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+        ],
+    "description": "全局提示"
+  },
+  "全局提示-错误": {
+    "prefix": "tm-message:error",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ model: 'error' })\" color=\"red\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"错误\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+        ],
+    "description": "全局提示"
+  },
+  "全局提示-警告": {
+    "prefix": "tm-message:warning",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ model: 'warn' })\" color=\"orange\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"警告\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+        ],
+    "description": "全局提示"
+  },
+  "全局提示-疑问": {
+    "prefix": "tm-message:quest",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ model: 'quest' })\" color=\"pink\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"疑问\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+        ],
+    "description": "全局提示"
+  },
+  "全局提示-成功": {
+    "prefix": "tm-message:success",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ model: 'success' })\" color=\"green\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"成功\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+        ],
+    "description": "全局提示"
+  },
+  "全局提示-禁用": {
+    "prefix": "tm-message:disabled",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ model: 'disabled' })\" color=\"green\" text :shadow=\"0\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"禁止\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+        ],
+    "description": "全局提示"
+  },
+  "全局提示-等待": {
+    "prefix": "tm-message:wait",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ model: 'wait' })\" color=\"black\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"等待\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+        ],
+    "description": "全局提示"
+  },
+  "全局提示-加载中": {
+    "prefix": "tm-message:loading",
+    "body": [
+      "<tm-button :margin=\"[12, 12]\" @click=\"msg.show({ model: 'load' })\" color=\"primary\" :width=\"120\" :height=\"56\" :fontSize=\"26\" label=\"加载中\" ></tm-button>",
+      "<tm-message ref=\"msg\" :lines=\"2\"></tm-message>",
+      "<!-- JS",
+      "const msg = ref<InstanceType<typeof tmMessage> | null>(null)",
+      "-->"
+    ],
+    "description": "全局提示"
+  },
+  "遮罩层": {
+    "prefix": "tm-overlay",
+    "body": [
+      "<tm-overlay v-model:show=\"showWin\" contentAnimation>",
+      "  <view @click.stop=\"\">",
+      "    <tm-sheet :width=\"500\" :height=\"500\">",
+      "      <tm-text label=\"更多属性动画时长这些请前文档\"></tm-text>",
+      "    </tm-sheet>",
+      "  </view>",
+      "</tm-overlay>",
+      "<!-- JS",
+      "const showWin = ref(false)",
+      "--> "
+    ],
+    "description": "遮罩层"
+  },
+  "进度条": {
+    "prefix": "tm-progress",
+    "body": [
+      "<tm-progress :width=\"636\" v-model:percent=\"percent\"></tm-progress>"
+    ],
+    "description": "进度条"
+  },
+  "加载中": {
+    "prefix": "tm-spin",
+    "body": [
+      "<tm-spin :load=\"load\" tip=\"点我取消加载\" @click=\"load = false\">",
+      "  <tm-sheet :margin=\"[0, 0]\" :padding=\"[0, 0]\">",
+      "    <tm-image src=\"https://picsum.photos/620/150\" :width=\"636\" :height=\"150\"></tm-image>",
+      "    <tm-text",
+      "      label=\"加载中 Spin可以应用于任何元素中，当然使用场景主要是局部内容加载反馈等等。加载中 Spin可以应用于任何元素中，当然使用场景主要是局部内容加载反馈等等。\"",
+      "    ></tm-text>",
+      "  </tm-sheet>",
+      "</tm-spin>"
+    ],
+    "description": "加载中"
+  },
+  "左滑操作": {
+    "prefix": "tm-slide-switch",
+    "body": [
+      "<tm-slide-switch v-for=\"item in 3\" :key=\"item\" :width=\"686\" :height=\"84\">",
+      "  <tm-cell :margin=\"[0, 0]\" :title=\"'向左滑动试' + item\"></tm-cell>",
+      "  <template v-slot:right>",
+      "    <view class=\"flex flex-row flex-row-center-end\">",
+      "      <tm-sheet  _class=\"flex flex-row flex-row-center-center\"  :width=\"w\"  :height=\"84\"  color=\"green\"  no-level  :margin=\"[0]\"  :padding=\"[0]\">",
+      "        <tm-text :userInteractionEnabled=\"false\" label=\"哈哈\"></tm-text>",
+      "      </tm-sheet>",
+      "      <tm-sheet  _class=\"flex flex-row flex-row-center-center\" :width=\"w\" :height=\"84\" color=\"primary\" no-level :margin=\"[0]\" :padding=\"[0]\">",
+      "        <tm-text :userInteractionEnabled=\"false\" label=\"删除\"></tm-text>",
+      "      </tm-sheet>",
+      "    </view>",
+      "  </template>",
+      "</tm-slide-switch>"
+    ],
+    "description": "左滑操作"
+  },
+  "骨架屏": {
+    "prefix": "tm-skeleton",
+    "body": [
+      "<tm-skeleton model=\"line,rect,card,chat\"></tm-skeleton>"
+    ],
+    "description": "骨架屏"
+  },
+  "通知提醒": {
+    "prefix": "tm-notification",
+    "body": [
+      "<tm-notification :placement=\"placement\" ref=\"msg\" label=\"消息提醒\"></tm-notification>"
+    ],
+    "description": "通知提醒"
+  },
+  "滚动消息通知": {
+    "prefix": "tm-roll-notice",
+    "body": [
+      "<tm-roll-notice @click=\"test\" :shadow=\"2\" :round=\"2\" color=\"red\" :text=\"false\" linear=\"right\" :list=\"content\"></tm-roll-notice>",
+      "<!-- JS",
+      "const content = ref(['11测试滚动试滚end', { text: '22测试滚动测试滚动测试滚动测试滚动测试滚动' }])",
+      "const test = (index: number) => {",
+      "  console.log('点击了：', index)",
+      "}",
+      "-->"
+    ],
+    "description": "滚动消息通知"
+  },
+  "底部操作栏": {
+    "prefix": "tm-action-menu",
+    "body": [
+      "<tm-action-menu @change=\"change\" v-model=\"show\" :list=\"list\"></tm-action-menu>",
+      "<!-- JS",
+      "const show = ref(false)",
+      "const list: Ref<Tmui.actionMenu[]> = ref([",
+      "  { text: '苹果', id: '1' },",
+      "  { text: '菠萝', id: '2' },",
+      "  { text: '香蕉', id: '3' }",
+      "])",
+      "function change(item: Tmui.actionMenu, index: number) {",
+      "  console.log('当前选中项目:', item, '索引:', index)",
+      "}",
+      "-->"
+    ],
+    "description": "底部操作栏"
+  },
+  "下拉选项": {
+    "prefix": "tm-dropdown",
+    "body": [
+      "<tm-dropdown position=\"br\" :width=\"220\" color=\"primary\" linear=\"bottom\" linearDeep=\"accent\" :list=\"list\">",
+      "  <tm-text label=\"右对齐\"></tm-text>",
+      "</tm-dropdown>",
+      "<!-- JS",
+      "const list = ref([",
+      "  { text: '苹果', id: '1', icon: 'tmicon-collection' },",
+      "  { text: '菠萝', id: '2', icon: 'tmicon-account-plus' },",
+      "  { text: '电话', id: '3', icon: 'tmicon-phone' }",
+      "])",
+      "-->"
+    ],
+    "description": "下拉选项"
+  },
+  "标题导航栏": {
+    "prefix": "tm-navbar",
+    "body": [
+      "<tm-navbar title=\"标题导航栏\" color=\"primary\" linear=\"right\" linearDeep=\"accent\">",
+      "  <template v-slot:left>",
+      "    标题导航栏",
+      "  </template>",
+      "  <template v-slot:right>",
+      "    <tm-icon _class=\"px-32\" name=\"tmicon-plus\"></tm-icon>",
+      "  </template>",
+      "</tm-navbar>"
+    ],
+    "description": "标题导航栏"
+  },
+  "分页": {
+    "prefix": "tm-pagination",
+    "body": [
+      "<tm-pagination v-model:current=\"abv\" color=\"primary\" :total=\"100\"></tm-pagination>"
+    ],
+    "description": "分页"
+  },
+  "分段器": {
+    "prefix": "tm-segtab",
+    "body": [
+      "<tm-segtab :round=\"24\" :width=\"636\" color=\"primary\" activeColor=\"white\" :list=\"list\" defaultValue=\"2\"></tm-segtab>"
+    ],
+    "description": "分段器"
+  },
+  "步骤条": {
+    "prefix": "tm-steps",
+    "body": [
+      "<tm-steps type=\"number\" activeColor=\"green\" :defaultCurrent=\"2\">",
+      "  <tm-steps-item :width=\"200\" :title=\"item.title\" v-for=\"(item, index) in list\" :key=\"index\"> </tm-steps-item>",
+      "</tm-steps>",
+      "<!-- JS",
+      "const list = ref([",
+      "  { title: '开始', label: '33' },",
+      "  { title: '投放中', label: '' },",
+      "  { title: '审核', label: '' },",
+      "  { title: '最后审查', label: '' },",
+      "  { title: '完成', label: '' }",
+      "])",
+      "-->"
+    ],
+    "description": "步骤条"
+  },
+  "底部导航": {
+    "prefix": "tm-tabbar",
+    "body": [
+      "<tm-tabbar :autoSelect=\"false\" v-model:active=\"acc\">",
+      "      <tm-tabbar-item",
+      "        @click=\"acc = 0\"",
+      "        activeColor=\"orange\"",
+      "        count=\"HOT\"",
+      "        open-type=\"reLaunch\"",
+      "        text=\"首页\"",
+      "        icon=\"tmicon-collection-fill\"",
+      "      ></tm-tabbar-item>",
+      "      <tm-tabbar-item @click=\"acc = 1\" activeColor=\"orange\" text=\"表单\" icon=\"tmicon-cog-fill\"></tm-tabbar-item>",
+      "      <tm-tabbar-item",
+      "        @click=\"acc = 2\"",
+      "        :shadow=\"2\"",
+      "        :beforeClick=\"laodingfun\"",
+      "        :data=\"'中间项'\"",
+      "        btn-top",
+      "        fontColor=\"white\"",
+      "        activeColor=\"white\"",
+      "        linear=\"top\"",
+      "        linearDeep=\"accent\"",
+      "        color=\"yellow\"",
+      "        icon=\"tmicon-plus\"",
+      "      ></tm-tabbar-item>",
+      "      <tm-tabbar-item",
+      "        @click=\"acc = 3\"",
+      "        activeColor=\"orange\"",
+      "        url=\"/pages/fankui/index\"",
+      "        text=\"反馈分类\"",
+      "        unicon=\"tmicon-like\"",
+      "        icon=\"tmicon-heart-fill\"",
+      "      ></tm-tabbar-item>",
+      "      <tm-tabbar-item",
+      "        @click=\"acc = 4\"",
+      "        activeColor=\"orange\"",
+      "        :count=\"8\"",
+      "        url=\"/pages/chart/index\"",
+      "        active",
+      "        text=\"图表中心\"",
+      "        unicon=\"tmicon-account\"",
+      "        icon=\"tmicon-userplus-fill\"",
+      "      ></tm-tabbar-item>",
+      "    </tm-tabbar>",
+      "    <!-- JS",
+      "    const acc = ref(1)",
+      "function laodingfun(val) {",
+      "  return new Promise((res) => {",
+      "    setTimeout(function () {",
+      "      console.log('选中了：', val)",
+      "      res(true)",
+      "    }, 2000)",
+      "  })",
+      "}",
+      "-->"
+    ],
+    "description": "底部导航"
+  },
+  "下拉筛选": {
+    "prefix": "tm-filterMenu",
+    "body": [
+      "<tm-sticky :offset=\"stop\">",
+      "  <template v-slot:sticky>",
+      "    <tm-filterMenu :fixed=\"true\">",
+      "      <tm-filterMenu-item icon=\"tmicon-filter-fill\" un-icon=\"tmicon-filter\" :height=\"450\" title=\"筛选\">",
+      "        <tm-text",
+      "          :font-size=\"24\"",
+      "          _class=\"text-weight-b\"",
+      "          label=\"为了针对性的数据结构体设计问题.本下拉菜单过滤器,不提供数据结构,也不处理数据,全交由用户自行处理,我只处理动效.\"",
+      "        ></tm-text>",
+      "      </tm-filterMenu-item>",
+      "      <tm-filterMenu-item title=\"价格排序\">",
+      "        <tm-text :font-size=\"24\" _class=\"text-weight-b\" label=\"数据由用户处理\"></tm-text>",
+      "      </tm-filterMenu-item>",
+      "      <tm-filterMenu-item :height=\"650\" title=\"更多\" un-icon=\"tmicon-stepmode\" icon=\"tmicon-menu\">",
+      "        <tm-text :font-size=\"24\" _class=\"text-weight-b\" label=\"数据由用户处理\"></tm-text>",
+      "      </tm-filterMenu-item>",
+      "      <tm-filterMenu-item isButton title=\"价格排序\" un-icon=\"tmicon-sort\" icon=\"tmicon-sort\"> </tm-filterMenu-item>",
+      "    </tm-filterMenu>",
+      "  </template>",
+      "</tm-sticky>",
+      "<!-- JS",
+      "let stop = ref(0)",
+      "// #ifdef H5",
+      "stop.value = uni.$tm.u.torpx(44)",
+      "// #endif",
+      "const checboxList = ref([",
+      "  { text: '测试项目1-1', id: '1' },",
+      "  { text: '测试项目2-1', id: '2' },",
+      "  { text: '测试项目3-1', id: '3' },",
+      "  { text: '测试项目4-1', id: '4' },",
+      "  { text: '测试项目5-1', id: '5' }",
+      "])",
+      "const checboxList2 = ref([",
+      "  { text: '哈哈1', id: '1' },",
+      "  { text: '哈哈2-1', id: '2' },",
+      "  { text: '哈哈3-1', id: '3' },",
+      "  { text: '哈哈4-1', id: '4' },",
+      "  { text: '哈哈5-1', id: '5' }",
+      "])",
+      "const radioList3 = ref([",
+      "  { text: 'radio1', id: '1' },",
+      "  { text: 'radio12-1', id: '2' },",
+      "  { text: 'radio13-1', id: '3' },",
+      "  { text: 'radio14-1', id: '4' },",
+      "  { text: 'radio15-1', id: '5' }",
+      "])",
+      "-->"
+    ],
+    "description": "遮罩层"
+  },
+  "侧边栏导航": {
+    "prefix": "tm-side-menu",
+    "body": [
+      "<tm-side-menu v-model:active=\"active\" :itemHeight=\"100\" :list=\"list\">",
+      "  <tm-text _class=\"pa-32\" label=\"这边是你的内容区域\"></tm-text>",
+      "</tm-side-menu>",
+      "<!-- JS",
+      "const active = ref(3)",
+      "const list = ref([",
+      "  { text: '广东', id: 1 },",
+      "  { text: '北京', id: 2 },",
+      "  { text: '江苏', id: 3, dotCount: 6 },",
+      "  { text: '南昌', id: 4, icon: 'tmicon-md-chatboxes' },",
+      "  { text: '上海', id: 5 },",
+      "  { text: '吃菠菜吃菠菜吃菠菜', id: 6, dotCount: 6 },",
+      "  { text: 'Hellow', id: 7 },",
+      "  { text: 'Github', id: 8, dotCount: 1 },",
+      "  { text: 'Vue', id: 9 },",
+      "  { text: 'Uniapp', id: 10 }",
+      "])",
+      "-->"
+    ],
+    "description": "侧边栏导航"
+  },
+  "验证码输入框": {
+    "prefix": "tm-codeinput",
+    "body": [
+      "<tm-codeinput :border=\"2\" :round=\"4\" @click=\"show = true\" :value=\"str\"></tm-codeinput>"
+    ],
+    "description": "验证码输入框"
+  },
+  "图片裁剪": {
+    "prefix": "tm-cropimg",
+    "body": [
+      "<tm-cropimg></tm-cropimg>"
+    ],
+    "description": "图片裁剪"
+  },
+  "悬浮按钮": {
+    "prefix": "tm-float-button",
+    "body": [
+      "<tm-float-button",
+      "  :disabledScrollTo=\"false\"",
+      "  position=\"br\"",
+      "  :btn=\"{ icon: 'tmicon-angle-up', linear: '', color: 'white', label: '置顶' }\"",
+      "></tm-float-button>"
+    ],
+    "description": "悬浮按钮"
+  },
+  "吸顶": {
+    "prefix": "tm-sticky",
+    "body": [
+      "<tm-sticky :offset=\"offset\">",
+      "  <template v-slot:sticky>",
+      "    <tm-sheet color=\"primary\" :margin=\"[0, 0]\">",
+      "      <tm-text :font-size=\"24\" _class=\"text-weight-b\" label=\"滑动页面我被悬浮了\"></tm-text>",
+      "    </tm-sheet>",
+      "  </template>",
+      "  <tm-sheet :height=\"2000\"> </tm-sheet>",
+      "</tm-sticky>"
+    ],
+    "description": "吸顶"
+  },
+  "百度图标": {
+    "prefix": "tm-chart",
+    "body": [
+      "<!-- #ifndef MP -->",
+      "<tm-chart ref=\"chartDom\" :height=\"600\" @onInit=\"chartInit\"></tm-chart>",
+      "<!-- #endif -->",
+      "<!-- JS",
+      "// #ifndef MP",
+      "import tmChart from '@/tmui/components/tm-chart/tm-chart.vue'",
+      "import { ECharts } from 'echarts'",
+      "import { chartdata } from './chartdata'",
+      "const chartDom = ref<InstanceType<typeof tmChart>>(null)",
+      "let chartdataAny: any = chartdata",
+      "const dkey = ref('lineChart')",
+      "onLoad((obj: any) => {",
+      "  if (obj?.key !== '' && typeof obj?.key != 'undefined') {",
+      "    dkey.value = obj?.key ?? 'lineChart'",
+      "  }",
+      "})",
+      "function chartInit(chart: ECharts) {",
+      "  chart.setOption(chartdata[dkey.value])",
+      "  setTimeout(() => {",
+      "    chartDom.value.getImg().then((e) => {",
+      "      // 打印图表图片，记得要等动画结束再截取，这里只是演示，具体以你的情况为例做调整。",
+      "      console.log(e)",
+      "    })",
+      "  }, 200)",
+      "}",
+      "// #endif",
+      "-->"
+    ],
+    "description": "百度图标"
+  },
+  "签名板": {
+    "prefix": "tm-sign-board",
+    "body": [
+      "<tm-sign-board :line-color=\"colorNow\" :line-width=\"lineWidth\" ref=\"board\" :width=\"638\" :height=\"400\"></tm-sign-board>",
+      "<!-- JS",
+      "const proxy = getCurrentInstance()?.proxy ?? null",
+      "const board = ref<InstanceType<typeof tmSignBoard> | null>(null)",
+      "const colors = ['red', 'blue', 'black', 'green']",
+      "const colorNow = ref('red')",
+      "const lineWidth = ref(5)",
+      "const saveImg = async () => {",
+      "  let src = await board.value?.save()",
+      "  uni.showToast({ title: '成功，请查看日志', icon: 'none' })",
+      "  console.log(src)",
+      "  if (!src) return",
+      "  // #ifndef H5",
+      "  uni.previewImage({",
+      "    current: src,",
+      "    urls: [src]",
+      "  })",
+      "  // #endif",
+      "}",
+      "-->"
+    ],
+    "description": "签名板"
+  },
+  "条形码": {
+    "prefix": "tm-barcode",
+    "body": [
+      "<tm-barcode :width=\"636\" :option=\"opts\"></tm-barcode>",
+      "<!-- JS",
+      "let opts = ref({ lineColor: '#000000', fontSize: 20, width: 2, text: '1234567890123456789' })",
+      "-->"
+    ],
+    "description": "条形码"
+  },
+  "横向滚动": {
+    "prefix": "tm-scrollx",
+    "body": [
+      "<tm-sheet :padding=\"[0, 0]\" _class=\"overflow\">",
+      "  <tm-scrollx align=\"between\" :width=\"686\" :height=\"300\">",
+      "    <template v-slot:barll>",
+      "      <tm-text _class=\"pl-24\" color=\"primary\" :font-size=\"24\" label=\"新闻关键词,营销信息\"></tm-text>",
+      "    </template>",
+      "    <tm-grid :col=\"7\" :width=\"1340\">",
+      "      <tm-grid-item v-for=\"(item, index) in list\" :key=\"index\" :height=\"140\" :count=\"item.count\">",
+      "        <tm-image :width=\"110\" :height=\"79\" :src=\"item.path\"></tm-image>",
+      "        <view style=\"white-space: normal\">",
+      "          <tm-text _class=\"text-overflow-1\" :font-size=\"24\" :label=\"item.title\"></tm-text>",
+      "        </view>",
+      "      </tm-grid-item>",
+      "    </tm-grid>",
+      "  </tm-scrollx>",
+      "</tm-sheet>",
+      "<!-- JS",
+      "const list = ref([",
+      "  { path: 'https://gw.alicdn.com/imgextra/i4/O1CN01XCiY1B1px9ivHkDGm_!!6000000005426-2-tps-183-144.png_q90.jpg', title: '天猫新品', count: '热销' },",
+      "  {",
+      "    path: 'https://gw.alicdn.com/imgextra/i3/O1CN01FgQFp81spmBXqQMtA_!!6000000005816-2-tps-183-144.png_q90.jpg',",
+      "    title: '今日爆款今日爆款今日爆款',",
+      "    count: 0",
+      "  },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i1/O1CN01tsk5OY1q0MUo5PJga_!!6000000005433-2-tps-183-144.png_q90.jpg', title: '天猫国际', count: 0 },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i2/O1CN01yK3Cxn1sTnAx1fOjq_!!6000000005768-2-tps-183-144.png_q90.jpg', title: '飞猪旅行', count: 0 },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i1/O1CN01iZIGkz1URSOUdRHqS_!!6000000002514-2-tps-183-144.png_q90.jpg', title: '天猫超市', count: 0 },",
+      "  {",
+      "    path: 'https://gw.alicdn.com/imgextra/i4/O1CN01VuRfwH1muSbsJFxoM_!!6000000005014-2-tps-183-144.png_q90.jpg_.webp',",
+      "    title: '冬奥公益',",
+      "    count: 0",
+      "  },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i2/O1CN01yK3Cxn1sTnAx1fOjq_!!6000000005768-2-tps-183-144.png_q90.jpg', title: '飞猪旅行', count: 99 },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i1/O1CN01iZIGkz1URSOUdRHqS_!!6000000002514-2-tps-183-144.png_q90.jpg', title: '天猫超市', count: 0 },",
+      "  {",
+      "    path: 'https://gw.alicdn.com/imgextra/i4/O1CN01VuRfwH1muSbsJFxoM_!!6000000005014-2-tps-183-144.png_q90.jpg_.webp',",
+      "    title: '冬奥公益',",
+      "    count: 0",
+      "  },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i4/O1CN01XCiY1B1px9ivHkDGm_!!6000000005426-2-tps-183-144.png_q90.jpg', title: '天猫新品', count: 6 },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i3/O1CN01FgQFp81spmBXqQMtA_!!6000000005816-2-tps-183-144.png_q90.jpg', title: '今日爆款', count: 0 },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i1/O1CN01tsk5OY1q0MUo5PJga_!!6000000005433-2-tps-183-144.png_q90.jpg', title: '天猫国际', count: 0 },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i2/O1CN01yK3Cxn1sTnAx1fOjq_!!6000000005768-2-tps-183-144.png_q90.jpg', title: '飞猪旅行', count: 0 },",
+      "  { path: 'https://gw.alicdn.com/imgextra/i1/O1CN01iZIGkz1URSOUdRHqS_!!6000000002514-2-tps-183-144.png_q90.jpg', title: '天猫超市', count: 0 }",
+      "])",
+      "-->"
+    ],
+    "description": "横向滚动"
+  },
+  "纵向滚动": {
+    "prefix": "tm-scrolly",
+    "body": [
+      "<tm-scrolly :refresher=\"false\" v-model=\"pull\" v-model:bottom-value=\"bottomFresh\" @refresh=\"refresh\" @bottom=\"refreshBottom\">",
+      "  <tm-text label=\"触摸区域,体验下拉刷新操作.\"></tm-text>",
+      "  <view v-for=\"(item, index) in 50\" :key=\"index\" style=\"height: 40px\" class=\"px-36\">",
+      "    <text>{{ item }}</text>",
+      "  </view>",
+      "</tm-scrolly>",
+      "<!-- JS",
+      "const pull = ref(false)",
+      "const bottomFresh = ref(false)",
+      "function refresh() {",
+      "  setTimeout(function () {",
+      "    pull.value = false",
+      "  }, 1500)",
+      "}",
+      "function refreshBottom() {",
+      "  bottomFresh.value = true",
+      "  uni.showLoading({ title: '...', mask: true })",
+      "  setTimeout(function () {",
+      "    bottomFresh.value = false",
+      "    uni.hideLoading()",
+      "  }, 1500)",
+      "}",
+      "-->"
+    ],
+    "description": "纵向滚动"
+  },
+  "水印": {
+    "prefix": "tm-watermark",
+    "body": [
+      "<tm-watermark",
+      "  selectable",
+      "  :font-size=\"opts.fontSize\"",
+      "  :line-height=\"opts.lineHeight\"",
+      "  :fullscreen=\"opts.fullscreen\"",
+      "  :width=\"opts.width\"",
+      "  :height=\"opts.height\"",
+      "  :x-offset=\"opts.xOffset\"",
+      "  :y-offset=\"opts.yOffset\"",
+      "  :x-gap=\"opts.xGap\"",
+      "  :y-gap=\"opts.yGap\"",
+      "  :rotate=\"opts.rotate\"",
+      "  :content=\"opts.content\"",
+      "  :image=\"opts.image\"",
+      "  :image-width=\"opts.imageWidth\"",
+      "  :image-height=\"opts.imageHeight\"",
+      "  :image-opacity=\"opts.imageOpacity\"",
+      ">",
+      "###",
+      "</tm-watermark>",
+      "<!-- JS",
+      "const opts = ref({",
+      "  content: 'TMUI',",
+      "  fontSize: 12,",
+      "  lineHeight: 12,",
+      "  fullscreen: false,",
+      "  width: 60,",
+      "  height: 60,",
+      "  xGap: 0,",
+      "  yGap: 0,",
+      "  xOffset: 14,",
+      "  yOffset: 30,",
+      "  rotate: -20,",
+      "  image: '',",
+      "  imageOpacity: 0.24,",
+      "  imageWidth: 60,",
+      "  imageHeight: 60",
+      "})",
+      "function handleUpload(res) {",
+      "  opts.value.image = res[0].url",
+      "}",
+      "-->"
+    ],
+    "description": "水印"
+  },
+  "富文本": {
+    "prefix": "tm-html",
+    "body": [
+      "<tm-html :content=\"rx\"></tm-html>",
+      "<!-- JS",
+      "let rx = `<div class=\"content_area\" id=\"content_area\">",
+      "         <!--repaste.body.begin--><p><strong>　　央视网消息：</strong>在安徽中稻迎来了丰收季。在肥东县相邻的两块地景象大不相同，农机作业的进度和效率也不同。<br></p><p style=\"text-align: center;\" class=\"photo_img_20190808\"><img src=\"//p4.img.cctvpic.com/photoworkspace/contentimg/2022/10/14/2022101414244666208.jpg\" alt=\"\"></p><p style=\"text-align: center;\" class=\"photo_img_20190808\"><img src=\"//p5.img.cctvpic.com/photoworkspace/contentimg/2022/10/14/2022101414244671910.jpg\" alt=\"\"></p><p>　　<strong>总台记者 吴俊：</strong>这里是肥东县古城镇，今天天气晴好，收割机已经进入高标准农田作业。去年秋季，肥东县有7.8万亩田地进行高标准农田改造。改造后的农田，可以说是田成方、林成网、渠相通、路相连。这里一路之隔，一侧是改造过的农田，不仅有了机耕路，农机可以直接到田边，而且修建了标准的灌渠，灌溉和排涝不愁。而路的一侧是还没改造的地块，只有窄窄的杂草丛生的田埂，灌渠也是这种土渠。另外从航拍画面对比来看，改造过的农田，通过小田变大田，打破了田埂，非常适合农机作业。而没有改造过的，田块大小不均、高低不平，农机也没办法下田作业。<br></p><p style=\"text-align: center;\" class=\"photo_img_20190808\"><img src=\"//p3.img.cctvpic.com/photoworkspace/contentimg/2022/10/14/2022101414250079300.jpg\" alt=\"\"></p><p style=\"text-align: center;\" class=\"photo_img_20190808\"><img src=\"//p3.img.cctvpic.com/photoworkspace/contentimg/2022/10/14/2022101414250072259.jpg\" alt=\"\"></p><p>　　改造后的高标准农田，配套了机械深耕、增施有机肥和土壤调理等综合措施，改善了土壤板结度、有机质含量以及酸碱平衡，这为眼前的好收成打下了基础。稻谷颗粒非常饱满，尽管今年水稻在抽穗扬花期遭遇了持续高温，但是高标准农田改造后，能够及时引水灌溉，而且今年当地还种植了抗病新品种，应用了绿色防控等新技术，水稻产量不仅没受太大影响，比去年每亩还高了100斤左右。<br></p><!--repaste.body.end-->",
+      "        </div>`",
+      "-->"
+    ],
+    "description": "富文本"
+  },
+  "颜色选择器": {
+    "prefix": "tm-color-view",
+    "body": [
+      "<tm-color-view v-model=\"colorName\"></tm-color-view>"
+    ],
+    "description": "颜色选择器"
+  },
+  "吸附器": {
+    "prefix": "tm-adsorb",
+    "body": [
+      "<tm-adsorb :adsorb=\"false\" :offset=\"[left / 2, top / 2]\" :width=\"300\" :height=\"150\">",
+      "  <view class=\"flex flex-row flex-row-center-center\" style=\"width: 300rpx; height: 150rpx; background: green; border-radius: 10rpx\">",
+      "    <tm-text color=\"white\" label=\"随意拖动\"></tm-text>",
+      "  </view>",
+      "</tm-adsorb>"
+    ],
+    "description": "吸附器"
+  },
+  "飞元素": {
+    "prefix": "tm-fly-view",
+    "body": [
+      "<view class=\"flex flex-row flex-row-center-between pl-50\">",
+      "  <tm-fly-view :width=\"150\" :x=\"left2\" :y=\"top2\">",
+      "    <tm-button label=\"向右下抛\"></tm-button>",
+      "    <template v-slot:content><tm-button :round=\"24\" :width=\"50\" :height=\"50\"></tm-button></template>",
+      "  </tm-fly-view>",
+      "  <view></view>",
+      "</view>",
+      "<!-- JS",
+      "const sys = uni.getSystemInfoSync()",
+      "// 如果是h5y坐标要加上导航的高度。",
+      "const left = ref(60)",
+      "const top = ref(sys.windowHeight - 60)",
+      "const left2 = ref(sys.windowWidth - 85)",
+      "const top2 = ref(sys.windowHeight - 60)",
+      "-->"
+    ],
+    "description": "飞元素"
+  },
+  "优惠券": {
+    "prefix": "tm-coupon",
+    "body": [
+      "<tm-coupon extra thumb=\"https://picsum.photos/200/300\">",
+      "  <template v-slot:extra>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"1.使用不受限制\"></tm-text>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"2.使用不受限制使用\"></tm-text>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"3.使用不受限制使用\"></tm-text>",
+      "  </template>",
+      "</tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "优惠券-不显示右侧": {
+    "prefix": "tm-coupon:right:false",
+    "body": [
+      "<tm-coupon extra :show-right=\"false\">",
+      "  <template v-slot:extra>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"1.使用不受限制\"></tm-text>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"2.使用不受限制\"></tm-text>",
+      "  </template>",
+      "</tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "优惠券-红色": {
+    "prefix": "tm-coupon:pink",
+    "body": [
+      "<tm-coupon mainColor=\"pink\"></tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "优惠券-插槽": {
+    "prefix": "tm-coupon:slot:btn",
+    "body": [
+      "<tm-coupon mainColor=\"pink\">",
+      "  <template v-slot:btn>",
+      "    <tm-checkbox color=\"pink\" :round=\"24\"></tm-checkbox>",
+      "  </template>",
+      "</tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "优惠券-禁用": {
+    "prefix": "tm-coupon:disable",
+    "body": [
+      "<tm-coupon disable btn-label=\"已经使用\"></tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "优惠券-橙色": {
+    "prefix": "tm-coupon:orange",
+    "body": [
+      "<tm-coupon",
+      "  color=\"orange\"",
+      "  linear=\"right\"",
+      "  linear-deep=\"accent\"",
+      "  mainColor=\"orange\"",
+      "  font-color=\"\"",
+      "  thumb=\"https://picsum.photos/200/300\"",
+      "></tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "优惠券-渐变": {
+    "prefix": "tm-coupon:linear",
+    "body": [
+      "<tm-coupon color=\"pink\" linear=\"right\" linear-deep=\"accent\" mainColor=\"yellow\" font-color=\"\" extra>",
+      "  <template v-slot:extra>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"1.使用不受限制\"></tm-text>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"2.使用不受限制\"></tm-text>",
+      "  </template>",
+      "</tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "优惠券-黄色": {
+    "prefix": "tm-coupon:yellow",
+    "body": [
+      "<tm-coupon color=\"yellow\" mainColor=\"pink\" font-color=\"\" extra>",
+      "  <template v-slot:extra>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"1.使用不受限制\"></tm-text>",
+      "    <tm-text :font-size=\"22\" _class=\"opacity-7\" label=\"2.使用不受限制\"></tm-text>",
+      "  </template>",
+      "</tm-coupon>"
+    ],
+    "description": "优惠券"
+  },
+  "商品属性选择": {
+    "prefix": "tm-sku",
+    "body": [
+      "<tm-sku",
+      "  :value=\"'a-a-b'\"",
+      "  @buy=\"buy\"",
+      "  :num=\"num\"",
+      "  :height=\"900\"",
+      "  :sku-map=\"[",
+      "    { key: 'size', value: '商品尺码' },",
+      "    { key: 'color', value: '商品颜色' },",
+      "    { key: 'model', value: '商品型号' }",
+      "  ]\"",
+      "  :list=\"list\"",
+      "  v-model:show=\"show\"",
+      "></tm-sku>",
+      "<!-- JS",
+      "const show = ref(false)",
+      "const list = ref({",
+      "  data: [",
+      "    {",
+      "      title: '颜色类型',",
+      "      id: 'test',",
+      "      children: [",
+      "        {",
+      "          title: '白色',",
+      "          id: 'a',",
+      "          num: 5",
+      "        },",
+      "        {",
+      "          title: '黑色',",
+      "          id: 'b',",
+      "          num: 5",
+      "        }",
+      "      ]",
+      "    },",
+      "    {",
+      "      title: '尺码表',",
+      "      id: 'model',",
+      "      children: [",
+      "        {",
+      "          title: 'XS',",
+      "          id: 'a',",
+      "          num: 5",
+      "        },",
+      "        {",
+      "          title: 'S',",
+      "          id: 'b',",
+      "          num: 5",
+      "        }",
+      "      ]",
+      "    },",
+      "    {",
+      "      title: '款式',",
+      "      id: 'style',",
+      "      children: [",
+      "        {",
+      "          title: '套装',",
+      "          id: 'a',",
+      "          num: 5",
+      "        },",
+      "        {",
+      "          title: '单件',",
+      "          id: 'b',",
+      "          num: 5",
+      "        }",
+      "      ]",
+      "    }",
+      "  ],",
+      "  product: [",
+      "    {",
+      "      id: 'a-a-a',",
+      "      title: '白色-XS-套装',",
+      "      num: 2,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i1/2328862868/O1CN01b5pglN1X3ahprbU9P_!!2328862868.jpg'",
+      "    },",
+      "    {",
+      "      id: 'a-a-b',",
+      "      title: '白色-XS-单件',",
+      "      num: 5,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i3/2328862868/O1CN01UBMJfy1X3af4Lc3ME_!!2328862868.jpg'",
+      "    },",
+      "    {",
+      "      id: 'a-b-a',",
+      "      title: '白色-S-套装',",
+      "      num: 3,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i1/TB1fw40oAvoK1RjSZPfSutPKFXa.jpg'",
+      "    },",
+      "    {",
+      "      id: 'a-b-b',",
+      "      title: '白色-S-单件',",
+      "      num: 5,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i1/398719215/O1CN01zgD6Xi2HwWY8U589Z_!!398719215.jpg'",
+      "    },",
+      "    {",
+      "      id: 'b-a-a',",
+      "      title: '黑色-XS-套装',",
+      "      num: 0,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i1/TB1fw40oAvoK1RjSZPfSutPKFXa.jpg'",
+      "    },",
+      "    {",
+      "      id: 'b-a-b',",
+      "      title: '黑色-XS-单件',",
+      "      num: 5,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i3/2328862868/O1CN01UBMJfy1X3af4Lc3ME_!!2328862868.jpg'",
+      "    },",
+      "    {",
+      "      id: 'b-b-a',",
+      "      title: '黑色-S-套装',",
+      "      num: 0,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i1/2328862868/O1CN01b5pglN1X3ahprbU9P_!!2328862868.jpg'",
+      "    },",
+      "    {",
+      "      id: 'b-b-b',",
+      "      title: '黑色-S-单件',",
+      "      num: 5,",
+      "      max_buy: 3,",
+      "      price: 56.9,",
+      "      salePrice: 54,",
+      "      tip: '当前可省10元',",
+      "      img: 'https://gw.alicdn.com/bao/uploaded/i1/TB1fw40oAvoK1RjSZPfSutPKFXa.jpg'",
+      "    }",
+      "  ]",
+      "})",
+      "const num = ref(2)",
+      "function buy(e: any) {",
+      "  console.log(e)",
+      "}",
+      "-->"
+    ],
+    "description": "商品属性选择"
+  }
+}
